@@ -43,4 +43,7 @@ this modules create following resources, we are using HA, we are getting first 2
 * peering_tags (OPTIONAL) - Default value is empty, type is map.
 
 ## OUTPUTS 
-
+ vpc_id = vpc id created 
+ public_subnet_ids = 2 public subnet id created
+ private_subnet_ids = 2 private subnet id created
+ databse_subnet-ids = 2 database subnet id created
