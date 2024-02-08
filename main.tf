@@ -72,6 +72,15 @@ tags = merge(
 )
 }
 
+resource "aws_db_subnet_group" "default" {
+  name       = "${local.name}"
+  subnet_ids = aws_subnet.database[*].id
+
+  tags = {
+    Name = "${local.name}"
+  }
+}
+
 
 resource "aws_eip" "eip" {
   domain           = "vpc"
